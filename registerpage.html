@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            /* Light background */
+        }
+
+        .card {
+            margin-top: 50px;
+            border: none;
+            border-radius: 1rem;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            /* Primary color */
+            color: white;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            /* Success color */
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+            /* Darker success color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card form-control">
+            <div class="card-header text-center">
+                <h2>Register</h2>
+            </div>
+            <div class="card-body">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword"
+                            placeholder="Confirm your password" required>
+                    </div>
+                    <button  class="btn btn-custom w-100" id="register">Register</button>
+ 
+                <p class="mt-3 text-center">Already have an account? <a href="index.html">Login here</a></p>
+            </div>
+        </div>
+      </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/registerpage.js"></script>
+</body>
+
+</html>
